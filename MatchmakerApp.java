@@ -73,22 +73,55 @@ public class MatchmakerApp extends Application
 
 	public static String pairingPeople()
 	{
+		String recommendation = "Unknown";
+
 		removePeople();
 		listToProb(peopleList);
 		matchAlgo(peopleList, peopleProbList);
 		partner = maxValueFinal;
 		removePeople.add(peopleList.get(0));
 		removePeople.add(peopleList.get(partner));
+		if(compatibility >= 97.00)
+		{
+			recommendation = "Perfect Match";
+		}
+		else if(compatibility < 97.00 && compatibility >= 80.00)
+		{
+			recommendation = "Very Likely Match";
+		}
+		else if(compatibility < 80.00 && compatibility >= 50.00)
+		{
+			recommendation = "Likely Match";
+		}
+		else if(compatibility < 50.00 && compatibility >= 35.00)
+		{
+			recommendation = "Re-match Recommended";
+		}
+		else if(compatibility < 35.00 && compatibility >= 0.00)
+		{
+			recommendation = "Re-match Needed";
+		}
+		else
+		{
+			recommendation = "Unknown";
+		}
 
 		if(!isSingleRun)
 		{
 			peopleListCSV.add(peopleList.get(0).toString());
 			peopleListCSV.add(peopleList.get(partner).toString());
 			peopleListCSV.add(Double.toString(compatibility));
+			peopleListCSV.add(recommendation);
 			JavaToCSV(peopleListCSV);
 		}
-
-		return peopleList.get(0) + " & " + peopleList.get(partner) + " Compatibility: " + Double.toString(compatibility) + "%";
+		if(!isSingleRun)
+		{
+			return peopleList.get(0) + " & " + peopleList.get(partner) + " Compatibility: " + Double.toString(compatibility) + "%, Recommendation: " + recommendation;
+		}
+		else
+		{
+			return peopleList.get(0) + " & " + peopleList.get(partner) + "\n" + "Compatibility: " + Double.toString(compatibility) + "%" + "\n" + "Recommendation: " + recommendation;
+		}
 	}
 
 	public static void CSVToJava()
@@ -392,9 +425,9 @@ public class MatchmakerApp extends Application
 		return(content);
 	}
 
-	public static void showInfoAlert(String title, String headerText, String contentText)
+	public static void showAlert(AlertType alertType, String title, String headerText, String contentText)
 	{
-		Alert alert = new Alert(AlertType.INFORMATION);
+		Alert alert = new Alert(alertType);
         alert.setTitle(title);
         alert.setHeaderText(headerText);
         alert.setContentText(contentText);
@@ -514,23 +547,25 @@ public class MatchmakerApp extends Application
                 TableColumn columnF1 = new TableColumn("Person");
                 TableColumn columnF2 = new TableColumn("Person");
                 TableColumn columnF3 = new TableColumn("Compatibility");
+                TableColumn columnF4 = new TableColumn("Algorithm Recommendation");
 
                 columnF1.setCellValueFactory(new PropertyValueFactory<>("f1"));
                 columnF2.setCellValueFactory(new PropertyValueFactory<>("f2"));
                 columnF3.setCellValueFactory(new PropertyValueFactory<>("f3"));
+                columnF4.setCellValueFactory(new PropertyValueFactory<>("f4"));
 
                 while((line = br.readLine()) != null)
                 {
                     al = line.split(delimit);
 
-                    FinalPeople finalPeople = new FinalPeople(al[0], al[1], Double.parseDouble(al[2]));
+                    FinalPeople finalPeople = new FinalPeople(al[0], al[1], Double.parseDouble(al[2]), al[3]);
                     
                     ol.add(finalPeople);
                 }
 
                 br.close();
                 displayCSV.setItems(ol);
-                displayCSV.getColumns().addAll(columnF1, columnF2, columnF3);
+                displayCSV.getColumns().addAll(columnF1, columnF2, columnF3, columnF4);
                 rootTwo.setCenter(displayCSV);
             }
         }

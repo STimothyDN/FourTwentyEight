@@ -72,7 +72,6 @@ public class MatchController implements Initializable
             FXCollections.sort(ol);
             singleChooser.setItems(ol);
         }
-        
         else
         {
             MatchmakerApp.dataDownloaded = false;
@@ -90,6 +89,7 @@ public class MatchController implements Initializable
             {
                 MatchmakerApp.downloadProgram();
             }
+            MatchmakerApp.deleteFile.delete();
         }
 
         downloadButton.setOnAction(this::handleDownload);
@@ -170,15 +170,11 @@ public class MatchController implements Initializable
                     }
 
                     singleChooser.setItems(ol);
-                    MatchmakerApp.showInfoAlert("Confirmation", null, "The latest data has been loaded into the matchmaking program!");
+                    MatchmakerApp.showAlert(AlertType.INFORMATION,"Confirmation", null, "The latest data has been loaded into the matchmaking program!");
                 }
                 else
                 {
-                    Alert alert = new Alert(AlertType.WARNING);
-                    alert.setTitle("Warning");
-                    alert.setHeaderText(null);
-                    alert.setContentText("You have the most up to date version! No file downloaded.");
-                    alert.showAndWait();
+                    MatchmakerApp.showAlert(AlertType.WARNING, "Warning", null, "You have the most up to date version! No file downloaded.");
                     deleteFile.delete();
                 }
             }
@@ -217,7 +213,7 @@ public class MatchController implements Initializable
         String compatible = MatchmakerApp.pairingPeople();
 
         MatchmakerApp.playAlert();
-        MatchmakerApp.showInfoAlert("Congratulations!", "New Pairing Generated", "After 25,000 simulations, the best match generated is:" + "\n" + compatible);
+        MatchmakerApp.showAlert(AlertType.INFORMATION,"Congratulations!", "New Pairing Generated", "After 25,000 simulations, the best match generated is:" + "\n" + compatible);
         MatchmakerApp.peopleList = new ArrayList<People>();
         MatchmakerApp.isSingleRun = false;
     }
@@ -249,17 +245,13 @@ public class MatchController implements Initializable
 
         if(MatchmakerApp.peopleList.size() == 0)
         {
-            Alert alert = new Alert(AlertType.WARNING);
-            alert.setTitle("Warning");
-            alert.setHeaderText(null);
-            alert.setContentText("No platonic pairs have been generated.");
-            alert.showAndWait();
+            MatchmakerApp.showAlert(AlertType.WARNING, "Warning", null, "No platonic pairs have been generated.");
         }
         
         else
         {
             MatchmakerApp.playAlert();
-            MatchmakerApp.showInfoAlert("Confirmation", null, "The latest platonic pairs have been generated!");
+            MatchmakerApp.showAlert(AlertType.INFORMATION,"Confirmation", null, "The latest platonic pairs have been generated!");
         }
     }
 
