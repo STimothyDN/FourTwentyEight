@@ -606,6 +606,8 @@ public class MatchmakerApp extends Application
                 	};
                 });
 
+                columnF4.setPrefWidth(200.00);
+
                 while((line = br.readLine()) != null)
                 {
                     al = line.split(delimit);

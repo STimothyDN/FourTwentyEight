@@ -1,19 +1,13 @@
 # FourTwentyEight
+### By Siyun Lee and Timothy Navarro
 
-FourTwentyEight 
-
-By Siyun Lee and Timothy Navarro
-
-Version: 5.6
-
-Last Updated: 05/11/2018
-
-Source Code: https://github.com/STimothyDN/FourTwentyEight
+* Version: 5.65
+* Last Updated: 05/11/2018
+* Source Code: https://github.com/STimothyDN/FourTwentyEight
 
 # Introduction
 
-Our platonic matchmaking program utilizes a variant of the Metropolis-Hastings Algorithm in order to create pairs. Data is fed in through a .csv file obtained through Google Forms, of which a new version can be obtained by simply clicking the download button from the program. Our program also features an in-program text and spreadsheet viewer to view generated pairs, as well as exception handling to avoid user error. A built-in web browser also allows users to fill out the matchmaking form if they haven’t already done so.
-
+Our platonic matchmaking program utilizes a variant of the Metropolis-Hastings Algorithm that we modified  in order to create pairs. Data is fed in through a .csv file obtained through Google Forms, of which a new version can be obtained by simply clicking the download button from the program. Our program also features an in-program text and spreadsheet viewer to view generated pairs, as well as exception handling to avoid user error. A built-in web browser also allows users to fill out the matchmaking form if they haven’t already done so.
 
 # Features
 ## STATE OF THE ART MATCHMAKING ALGORITHM
@@ -31,17 +25,16 @@ Our platonic matchmaking program utilizes a variant of the Metropolis-Hastings A
 * After matching, pairs are dumped into a folder called “Matchmaking” in both a .txt file and a .csv file.
 
 ## QUICK SINGLE PAIR MATCHING
-* If you are only interested in finding YOUR one true platonic partner, the program also features a quick “single pair” matching. Simply select your name, and run “Generate Match”
+* If you are only interested in finding YOUR one true platonic partner, the program also features a quick “single pair” matching. Simply select your name, and run “Generate Match.”
 
 ## BUILT-IN WEB BROWSER
-* For users who have yet to fill out the matchmaking form on the website, you can fill it out through our programs, built-in browser!
+* For users who have yet to fill out the matchmaking form on the website, you can fill it out through our programs built-in browser!
 
 ## BUILT-IN SPREADSHEET AND TEXT VIEWER
-* For improved accessibility, the program also features a built-in text and spreadsheet viewer, easily changed through the toggle button at the top right of the GUI.
+* For improved accessibility, the program also features a built-in text and spreadsheet viewer, easily changed through the toggle button at the top right of the GUI. The spreadsheet viewer allows users to sort the people and the compatibility score, making it easier for people to find their name, or to find the most compatible and least compatible pairs!
 
 ## BUILT-IN EXCEPTION HANDLING
 * Our program is dumb proof! Ran the algorithm after forgetting to load the data file? Trying to use the spreadsheet or text viewer when no pairs have been generated? Don’t fear! Our program won’t let you crash it, no matter how hard you try.
-
 
 # How our Algorithm Works
 
