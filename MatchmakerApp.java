@@ -17,6 +17,8 @@ import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.control.TableCell;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -554,6 +556,55 @@ public class MatchmakerApp extends Application
                 columnF2.setCellValueFactory(new PropertyValueFactory<>("f2"));
                 columnF3.setCellValueFactory(new PropertyValueFactory<>("f3"));
                 columnF4.setCellValueFactory(new PropertyValueFactory<>("f4"));
+                columnF4.setCellFactory(column ->
+                {
+                	return new TableCell<String, String>()
+                	{
+                		protected void updateItem(String item, boolean empty)
+                		{
+                			super.updateItem(item, empty);
+
+                			if(item == null || empty)
+                			{
+                				setText(null);
+                				setStyle("");
+                			}
+                			else
+                			{
+                				setText(item);
+                			}
+
+                			TableRow currentRow = getTableRow();
+
+                			if(!isEmpty())
+                			{
+                				if(item.equals("Perfect Match"))
+                				{
+                					currentRow.setStyle("-fx-background-color:#93c47d");
+                				}
+                				else if(item.equals("Very Likely Match"))
+                				{
+                					currentRow.setStyle("-fx-background-color:#b6d7a8");
+                				}
+                				else if(item.equals("Likely Match"))
+                				{
+                					currentRow.setStyle("-fx-background-color:#d9ead3");
+                				}
+                				else if(item.equals("Re-match Recommended"))
+                				{
+                					currentRow.setStyle("-fx-background-color:#f4cccc");
+                				}
+                				else if(item.equals("Re-match Needed"))
+                				{
+                					currentRow.setStyle("-fx-background-color:#ea9999");
+                				}
+                				else
+                				{
+                				}
+                			}
+                		}
+                	};
+                });
 
                 while((line = br.readLine()) != null)
                 {

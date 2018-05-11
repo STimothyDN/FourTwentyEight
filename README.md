@@ -4,7 +4,7 @@ FourTwentyEight
 
 By Siyun Lee and Timothy Navarro
 
-Version: 5.4
+Version: 5.6
 
 Last Updated: 05/11/2018
 
