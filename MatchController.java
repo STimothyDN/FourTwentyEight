@@ -20,6 +20,8 @@ import javafx.collections.ObservableList;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 
 public class MatchController implements Initializable
 {
@@ -29,6 +31,8 @@ public class MatchController implements Initializable
 	Button downloadButton;
     @FXML
     Button downloadProgramButton;
+    @FXML
+    Button formButton;
     @FXML
     Button openButton;
 	@FXML
@@ -99,6 +103,7 @@ public class MatchController implements Initializable
         openButton.setOnAction(this::handleOpen);
         viewButton.setOnAction(this::handleView);
         singleGo.setOnAction(this::handleSingle);
+        formButton.setOnAction(this::handleForm);
     }
 
     public MatchController()
@@ -213,7 +218,7 @@ public class MatchController implements Initializable
         String compatible = MatchmakerApp.pairingPeople();
 
         MatchmakerApp.playAlert();
-        MatchmakerApp.showAlert(AlertType.INFORMATION,"Congratulations!", "New Pairing Generated", "After 25,000 simulations, the best match generated is:" + "\n" + compatible);
+        MatchmakerApp.showAlert(AlertType.INFORMATION,"Congratulations!", "After 25,000 simulations, the best match generated is:", compatible);
         MatchmakerApp.peopleList = new ArrayList<People>();
         MatchmakerApp.isSingleRun = false;
     }
@@ -267,5 +272,18 @@ public class MatchController implements Initializable
     public void handleOpen(ActionEvent event)
     {
         MatchmakerApp.fileViewer(MatchmakerApp.fileToReadNow, "FourTwentyEight Viewer", MatchmakerApp.isWordView);
+    }
+
+    public void handleForm(ActionEvent event)
+    {
+        Stage browser = new Stage();
+        BorderPane rootBrowse = new BorderPane();
+        final WebView myWebBrowser = new WebView();
+        final WebEngine myWebEngine = myWebBrowser.getEngine();
+        myWebEngine.load("https://docs.google.com/forms/d/e/1FAIpQLSfO6BzVgDHsxCII-dEtt5QdYsMqIoN3U3x7duWuM8ThtmGC8Q/viewform?usp=sf_link");
+        rootBrowse.setCenter(myWebBrowser);
+        browser.setTitle("Matchmaking Form");
+        browser.setScene(new Scene(rootBrowse));
+        browser.show();
     }
 }
