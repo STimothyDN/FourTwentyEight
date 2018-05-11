@@ -53,7 +53,7 @@ public class MatchController implements Initializable
     public void initialize(URL location, ResourceBundle resources)
     {
         ArrayList<String> fromFile = new ArrayList<String>();
-        fromFile.add("https://docs.google.com/document/d/1PwOzBPkFMk3p-YBe4re_hgx0AAmvhXaM-NFWWZlYolQ/export?format=txt");
+        fromFile.add("https://raw.githubusercontent.com/STimothyDN/FourTwentyEight/master/README.md");
         fromFile.add("https://drive.google.com/uc?export=download&id=1mpenYPJxAUQet4pyz-xEc28I-XQzfQk3");
         ArrayList<String> toFile = new ArrayList<String>();
         toFile.add("Matchmaking/about.txt");
@@ -261,7 +261,7 @@ public class MatchController implements Initializable
 
     public void handleAbout(ActionEvent event)
     {
-        String fromFile = "https://docs.google.com/document/d/1PwOzBPkFMk3p-YBe4re_hgx0AAmvhXaM-NFWWZlYolQ/export?format=txt";
+        String fromFile = "https://raw.githubusercontent.com/STimothyDN/FourTwentyEight/master/README.md";
         String toFile = "Matchmaking/about.txt";
         
         MatchmakerApp.downloadFile(fromFile, toFile);

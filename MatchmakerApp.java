@@ -518,6 +518,7 @@ public class MatchmakerApp extends Application
         BorderPane rootTwo = new BorderPane();
         TableView<FinalPeople> displayCSV = new TableView<>();
         String delimit = ",";
+        displayPairs.setWrapText(true);
 
         displayPairs.setPrefSize(875, 565);
         displayPairs.setEditable(false);
