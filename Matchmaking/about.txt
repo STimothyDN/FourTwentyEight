@@ -2,16 +2,18 @@
 Siyun Lee and Timothy Navarro
 
 
-Version: 5.1
+Version: 5.3
 Last Updated: 05/11/2018
 
 
 Introduction
 ------------------------------------------------------------------------------------------------------------------------
-Our platonic matchmaking service utilizes a variant of the Metropolis-Hastings Algorithm in order to create pairs. Data is fed in through a 
+Our platonic matchmaking program utilizes a variant of the Metropolis-Hastings Algorithm in order to create pairs. Data is fed in through a 
 .csv file obtained through Google Forms, of which a new version can be obtained by simply clicking the download button from the 
 program. Our program also features an in-program text and spreadsheet viewer to view generated pairs, as well as exception 
-handling to avoid user error.
+handling to avoid user error. A built-in web browser allows users to fill out the matchmaking form if they haven’t already done so, and
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 
@@ -22,6 +24,7 @@ STATE OF THE ART MATCHMAKING ALGORITHM
 the algorithm guarantees compatibility!
 * Two iterations of a variant of the Metropolis-Hastings Algorithm are used, once to hone in on the “true compatibility” between two 
 people, and once again to hone in on the “one true match” for a person.
+* More information about how the algorithm runs below:)
 ------------------------------------------------------------------------------------------------------------------------
 UP-TO-DATE INFORMATION
    * Have access to the latest “About Me” file, matchmaking data set, or the program itself, through the program!
@@ -31,13 +34,16 @@ checks for new versions upon launch, and if a new version is downloaded, will au
 itself.
 ------------------------------------------------------------------------------------------------------------------------
 INTENSIVE WHOLE SET MATCHING
-      * FourTwentyEight’s main feature is creating platonic pairs for ALL users who have filled out the matchmaking survey distributed 
+      * FourTwentyEight’s main feature is creating platonic pairs for ALL users who have filled out the matchmaking form distributed 
 to the NCSSM Classes of 2018 and 2019 Facebook page.
       * After matching, pairs are dumped into a folder called “Matchmaking” in both a .txt file and a .csv file.
 ------------------------------------------------------------------------------------------------------------------------
 QUICK SINGLE PAIR MATCHING
          * If you are only interested in finding YOUR one true platonic partner, the program also features a quick “single pair” matching.
          * Simply select your name, and run “Generate Match”
+------------------------------------------------------------------------------------------------------------------------
+BUILT-IN WEB BROWSER
+         * For users who have yet to fill out the matchmaking form on the website, you can fill it out through our programs, built-in browser!
 ------------------------------------------------------------------------------------------------------------------------
 BUILT-IN SPREADSHEET AND TEXT VIEWER
          * For improved accessibility, the program also features a built-in text and spreadsheet viewer, easily changed

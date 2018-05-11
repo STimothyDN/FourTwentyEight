@@ -99,7 +99,7 @@
                            </font>
                         </Button>
                      </center></BorderPane>
-                  <ToggleButton fx:id="viewButton" mnemonicParsing="false" text="Word View" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                  <ToggleButton fx:id="viewButton" mnemonicParsing="false" text="Spreadsheet View" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                      <font>
                         <Font name="Georgia" size="13.0" />
                      </font>

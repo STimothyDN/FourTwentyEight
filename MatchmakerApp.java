@@ -39,9 +39,9 @@ public class MatchmakerApp extends Application
 	public static int countHowMany = 0;
 	public static String fileToRead = "Matchmaking/matchmaking - Form Responses 1.csv";
 	public static File fileToReadCheck = new File(fileToRead);
-	public static String fileToReadNow = "Matchmaking/matchmaking.txt";
+	public static String fileToReadNow = "Matchmaking/matchmaking.csv";
 	public static String fxmlFile = "MatchmakerApp.fxml";
-	public static boolean isWordView = true;
+	public static boolean isWordView = false;
     public static boolean dataDownloaded = false;
     public static boolean isSingleRun = false;
     public static int matchChain = 5000;
@@ -93,11 +93,11 @@ public class MatchmakerApp extends Application
 		{
 			recommendation = "Likely Match";
 		}
-		else if(compatibility < 50.00 && compatibility >= 35.00)
+		else if(compatibility < 50.00 && compatibility >= 30.00)
 		{
 			recommendation = "Re-match Recommended";
 		}
-		else if(compatibility < 35.00 && compatibility >= 0.00)
+		else if(compatibility < 30.00 && compatibility >= 0.00)
 		{
 			recommendation = "Re-match Needed";
 		}
@@ -220,7 +220,7 @@ public class MatchmakerApp extends Application
 				List<Double> counter = new ArrayList<Double>();
 				Double gamma = .01;
 
-				for(int x = 0; x <= 1500; x++)
+				for(int x = 0; x <= 1000; x++)
 				{
 					Random r = new Random();
 					Double newProb = newPeopleProb.totalProb() + r.nextGaussian()*gamma;

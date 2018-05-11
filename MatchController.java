@@ -145,9 +145,8 @@ public class MatchController implements Initializable
         {
             MatchmakerApp.downloadFile(fromFile, toFile);
         }
-        else
-        {
-            MatchmakerApp.downloadFile(fromFile, newFile);
+            
+        MatchmakerApp.downloadFile(fromFile, newFile);
             try
             {
                 byte[] f1 = Files.readAllBytes(Paths.get(toFile));
@@ -188,7 +187,7 @@ public class MatchController implements Initializable
             {
                 e.printStackTrace();
             }
-        }
+        
     }
 
     public void handleSingle(ActionEvent event)
