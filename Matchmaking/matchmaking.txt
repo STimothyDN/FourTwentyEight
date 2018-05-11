@@ -1,0 +1,4 @@
+A low compatibility indicates one of two things: you were compared among a small pool of people,
+which occurs when the algorithm reaches close to the end of running, or you are simply not compatible with anyone.
+Feel free to keep re-running the algorithm to determine whether you fall in category 1 or category 2.
+

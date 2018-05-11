@@ -75,6 +75,7 @@ public class MatchController implements Initializable
         
         else
         {
+            MatchmakerApp.dataDownloaded = false;
             downloadButton.setText("Download Data Set");
         }
 
@@ -135,15 +136,20 @@ public class MatchController implements Initializable
 
         deleteFile.delete();
 
-        MatchmakerApp.downloadFile(fromFile, newFile);
-
-        try
+        if(!MatchmakerApp.dataDownloaded)
         {
-            byte[] f1 = Files.readAllBytes(Paths.get(toFile));
-            byte[] f2 = Files.readAllBytes(Paths.get(newFile));
-
-            if(!Arrays.equals(f1, f2))
+            MatchmakerApp.downloadFile(fromFile, toFile);
+        }
+        else
+        {
+            MatchmakerApp.downloadFile(fromFile, newFile);
+            try
             {
+                byte[] f1 = Files.readAllBytes(Paths.get(toFile));
+                byte[] f2 = Files.readAllBytes(Paths.get(newFile));
+
+                if(!Arrays.equals(f1, f2))
+                {
                     deleteFile.delete();
                     MatchmakerApp.downloadFile(fromFile, toFile);
 
@@ -165,21 +171,22 @@ public class MatchController implements Initializable
 
                     singleChooser.setItems(ol);
                     MatchmakerApp.showInfoAlert("Confirmation", null, "The latest data has been loaded into the matchmaking program!");
+                }
+                else
+                {
+                    Alert alert = new Alert(AlertType.WARNING);
+                    alert.setTitle("Warning");
+                    alert.setHeaderText(null);
+                    alert.setContentText("You have the most up to date version! No file downloaded.");
+                    alert.showAndWait();
+                    deleteFile.delete();
+                }
             }
-            else
-            {
-                Alert alert = new Alert(AlertType.WARNING);
-                alert.setTitle("Warning");
-                alert.setHeaderText(null);
-                alert.setContentText("You have the most up to date version! No file downloaded.");
-                alert.showAndWait();
-                deleteFile.delete();
-            }
-        }
 
-        catch(IOException e)
-        {
-            e.printStackTrace();
+            catch(IOException e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 

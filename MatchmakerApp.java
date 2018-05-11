@@ -45,7 +45,7 @@ public class MatchmakerApp extends Application
     public static boolean dataDownloaded = false;
     public static boolean isSingleRun = false;
     public static int matchChain = 5000;
-    public static String newestProgramString = "https://drive.google.com/uc?export=download&id=139uRMrybR9_xfLEJmc2rWuthBnk6HU8f";
+    public static String newestProgramString = "https://github.com/STimothyDN/FourTwentyEight/raw/master/MatchmakerApp.jar";
     public static String testProgramString = "Matchmaking/MatchmakerApp.jar";
     public static String ogProgramString = "MatchmakerApp.jar";
     public static File deleteFile = new File(testProgramString);
