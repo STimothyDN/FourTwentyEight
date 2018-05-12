@@ -794,27 +794,27 @@ class PeopleProbPrior
 
 	public double calcQ1Prob()
 	{
-		return (1 - (Math.abs((personOne.getQ1() - personTwo.getQ1())/5)));
+		return Math.pow((1 - (Math.abs((personOne.getQ1() - personTwo.getQ1())/5))), 3.0);
 	}
 
 	public double calcQ2Prob()
 	{
-		return (1 - (Math.abs((personOne.getQ2() - personTwo.getQ2())/5)));
+		return Math.pow((1 - (Math.abs((personOne.getQ2() - personTwo.getQ2())/5))), 3.0);
 	}
 
 	public double calcQ3Prob()
 	{
-		return (1 - (Math.abs((personOne.getQ3() - personTwo.getQ3())/5)));
+		return Math.pow((1 - (Math.abs((personOne.getQ3() - personTwo.getQ3())/5))), 3.0);
 	}
 
 	public double calcQ4Prob()
 	{
-		return (1 - (Math.abs((personOne.getQ4() - personTwo.getQ4())/5)));
+		return Math.pow((1 - (Math.abs((personOne.getQ4() - personTwo.getQ4())/5))), 3.0);
 	}
 
 	public double calcQ5Prob()
 	{
-		return (1 - (Math.abs((personOne.getQ5() - personTwo.getQ5())/5)));
+		return Math.pow((1 - (Math.abs((personOne.getQ5() - personTwo.getQ5())/5))), 3.0);
 	}
 
 	public double totalProb()

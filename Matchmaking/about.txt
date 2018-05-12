@@ -1,8 +1,8 @@
 # FourTwentyEight
 ### By Siyun Lee and Timothy Navarro
 
-* Version: 5.65
-* Last Updated: 05/11/2018
+* Version: r6.0.1
+* Last Updated: 05/12/2018
 * Source Code: https://github.com/STimothyDN/FourTwentyEight
 
 # Introduction
