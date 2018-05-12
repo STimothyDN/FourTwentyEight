@@ -76,6 +76,7 @@ public class MatchController implements Initializable
             FXCollections.sort(ol);
             singleChooser.setItems(ol);
         }
+
         else
         {
             MatchmakerApp.dataDownloaded = false;
@@ -140,48 +141,48 @@ public class MatchController implements Initializable
         ObservableList<String> ol = FXCollections.observableArrayList();
 
         deleteFile.delete();
-
-        if(!MatchmakerApp.dataDownloaded)
-        {
-            MatchmakerApp.downloadFile(fromFile, toFile);
-        }
             
         MatchmakerApp.downloadFile(fromFile, newFile);
             try
             {
-                byte[] f1 = Files.readAllBytes(Paths.get(toFile));
-                byte[] f2 = Files.readAllBytes(Paths.get(newFile));
-
-                if(!Arrays.equals(f1, f2))
+                if(!MatchmakerApp.dataDownloaded)
                 {
-                    deleteFile.delete();
                     MatchmakerApp.downloadFile(fromFile, toFile);
-
-                    MatchmakerApp.peopleList = new ArrayList<People>();
-                    MatchmakerApp.CSVToJava();
-
-                    for(int i = 0; i < MatchmakerApp.peopleList.size(); i++)
-                    {
-                        ol.add(MatchmakerApp.peopleList.get(i).toString());
-                    }
-
-                    FXCollections.sort(ol);
-                    downloadButton.setText("Download Newest Version of Data");
-
-                    if(MatchmakerApp.dataDownloaded = false)
-                    {
-                        MatchmakerApp.dataDownloaded = true;
-                    }
-
-                    singleChooser.setItems(ol);
-                    MatchmakerApp.showAlert(AlertType.INFORMATION,"Confirmation", null, "The latest data has been loaded into the matchmaking program!");
                 }
                 else
                 {
-                    MatchmakerApp.showAlert(AlertType.WARNING, "Warning", null, "You have the most up to date version! No file downloaded.");
-                    deleteFile.delete();
+                    byte[] f1 = Files.readAllBytes(Paths.get(toFile));
+                    byte[] f2 = Files.readAllBytes(Paths.get(newFile));
+                    if(!Arrays.equals(f1, f2))
+                    {
+                        deleteFile.delete();
+                        MatchmakerApp.downloadFile(fromFile, toFile);
+                    }
+                    else
+                    {
+                        MatchmakerApp.showAlert(AlertType.WARNING, "Warning", null, "You have the most up to date version! No file downloaded.");
+                    }
                 }
-            }
+                    
+                MatchmakerApp.peopleList = new ArrayList<People>();
+                MatchmakerApp.CSVToJava();
+
+                for(int i = 0; i < MatchmakerApp.peopleList.size(); i++)
+                {
+                    ol.add(MatchmakerApp.peopleList.get(i).toString());
+                }
+
+                FXCollections.sort(ol);
+                downloadButton.setText("Download Newest Version of Data");
+
+                if(MatchmakerApp.dataDownloaded = false)
+                {
+                    MatchmakerApp.dataDownloaded = true;
+                }
+
+                singleChooser.setItems(ol);
+                MatchmakerApp.showAlert(AlertType.INFORMATION,"Confirmation", null, "The latest data has been loaded into the matchmaking program!");
+                }
 
             catch(IOException e)
             {
