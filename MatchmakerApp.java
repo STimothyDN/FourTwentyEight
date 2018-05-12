@@ -46,7 +46,7 @@ public class MatchmakerApp extends Application
 	public static boolean isWordView = false;
     public static boolean dataDownloaded = false;
     public static boolean isSingleRun = false;
-    public static int matchChain = 5000;
+    public static int matchChain = 4000;
     public static String newestProgramString = "https://github.com/STimothyDN/FourTwentyEight/raw/master/MatchmakerApp.jar";
     public static String testProgramString = "Matchmaking/MatchmakerApp.jar";
     public static String ogProgramString = "MatchmakerApp.jar";
@@ -222,7 +222,7 @@ public class MatchmakerApp extends Application
 				List<Double> counter = new ArrayList<Double>();
 				Double gamma = .01;
 
-				for(int x = 0; x <= 1000; x++)
+				for(int x = 0; x <= 750; x++)
 				{
 					Random r = new Random();
 					Double newProb = newPeopleProb.totalProb() + r.nextGaussian()*gamma;

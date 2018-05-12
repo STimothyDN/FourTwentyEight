@@ -193,7 +193,7 @@ public class MatchController implements Initializable
 
     public void handleSingle(ActionEvent event)
     {
-        MatchmakerApp.matchChain = 25000;
+        MatchmakerApp.matchChain = 20000;
         MatchmakerApp.isSingleRun = true;
         MatchmakerApp.peopleList = new ArrayList<People>();
         MatchmakerApp.CSVToJava();
@@ -218,7 +218,7 @@ public class MatchController implements Initializable
         String compatible = MatchmakerApp.pairingPeople();
 
         MatchmakerApp.playAlert();
-        MatchmakerApp.showAlert(AlertType.INFORMATION,"Congratulations!", "After 25,000 simulations, the best match generated is:", compatible);
+        MatchmakerApp.showAlert(AlertType.INFORMATION,"Congratulations!", "After 20,000 simulations, the best match generated is:", compatible);
         MatchmakerApp.peopleList = new ArrayList<People>();
         MatchmakerApp.isSingleRun = false;
     }
@@ -256,7 +256,7 @@ public class MatchController implements Initializable
         else
         {
             MatchmakerApp.playAlert();
-            MatchmakerApp.showAlert(AlertType.INFORMATION,"Confirmation", null, "The latest platonic pairs have been generated!");
+            MatchmakerApp.showAlert(AlertType.INFORMATION,"Confirmation", null, "The latest platonic pairs have been generated!" + "\n" + "Use the Open Previously Generated Pairings button to view!");
         }
     }
 
