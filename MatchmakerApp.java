@@ -58,15 +58,19 @@ public class MatchmakerApp extends Application
 
 	public static void main(String[] args) 
 	{
+		//String initiate = "https://github.com/STimothyDN/FourTwentyEight/raw/master/MatchmakerApp.fxml";
 		File dir = new File("Matchmaking");
 
 		dir.mkdir();
+		//downloadFile(initiate, fxmlFile);
 		launch(args);
 	}
 
 	public void start(Stage primary) throws Exception
 	{
-		Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
+		//String initiate = "https://github.com/STimothyDN/FourTwentyEight/raw/master/MatchmakerApp.fxml";
+		//downloadFile(initiate, fxmlFile);
+		Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(fxmlFile));
 
         primary.setTitle("FourTwentyEight");
         primary.setScene(new Scene(root));
