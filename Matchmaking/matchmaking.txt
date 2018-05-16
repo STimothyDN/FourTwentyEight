@@ -2,134 +2,154 @@ A low compatibility indicates one of two things: you were compared among a small
 which occurs when the algorithm reaches close to the end of running, or you are simply not compatible with anyone.
 Feel free to keep re-running the algorithm to determine whether you fall in category 1 or category 2.
 
-David Tang & Elikem Dodor Compatibility: 10.0%, Recommendation: Re-match Needed
-Deron Bakker & Akash Karri Compatibility: 99.0%, Recommendation: Perfect Match
-Hannah Stertzbach & Haley Heath Compatibility: 66.0%, Recommendation: Likely Match
-Daniel LaFata & Joe Benson Compatibility: 41.0%, Recommendation: Re-match Recommended
-Molly Klenzak & Bradley Samples Compatibility: 17.0%, Recommendation: Re-match Needed
-EJ Collins & Emily Duckworth Compatibility: 18.0%, Recommendation: Re-match Needed
-Eden Segbefia & Andrew Bounds Compatibility: 22.0%, Recommendation: Re-match Needed
-Helen Li & Kate  Nichols Compatibility: 64.0%, Recommendation: Likely Match
-Gracie  Joo (you're welcome Tim) & Debo Park Compatibility: 18.0%, Recommendation: Re-match Needed
-Megan  Hastings & Taylor Knapp Compatibility: 65.0%, Recommendation: Likely Match
-Christina  Liu & Keshav Javvadi Compatibility: 99.0%, Recommendation: Perfect Match
-Emily  Spero & Gehao Pang Compatibility: 99.0%, Recommendation: Perfect Match
-Pierre-Nicolas  Perrin & Willa Holt Compatibility: 99.0%, Recommendation: Perfect Match
-Jakob  Heiser & Madeline Paoletti Paoletti Compatibility: 64.0%, Recommendation: Likely Match
-Worth Powell & Alex Zhuang Compatibility: 80.0%, Recommendation: Very Likely Match
-Max Brinker & Keshav Shah Compatibility: 99.0%, Recommendation: Perfect Match
-Caleb Keaveney & Diana  Sanchez  Compatibility: 63.0%, Recommendation: Likely Match
-Emanuel Ordonez & Jesus Cisneros Estrada  Compatibility: 64.0%, Recommendation: Likely Match
-Mona  Su & Timothy Navarro Compatibility: 99.0%, Recommendation: Perfect Match
-Arushi Biswas & Hannah Cruz Compatibility: 51.0%, Recommendation: Likely Match
-Sierra Miles & Sarah  McClellan  Compatibility: 52.0%, Recommendation: Likely Match
-Chloe Pickell & Isabella Li Compatibility: 23.0%, Recommendation: Re-match Needed
-Lydia Nusbaum & Sahil Patel Compatibility: 99.0%, Recommendation: Perfect Match
-Angelina Katsanis & Nina Prabhu’ Compatibility: 51.0%, Recommendation: Likely Match
-Gage Grabert & Kevin Wang Compatibility: 98.0%, Recommendation: Perfect Match
-Jessica Wu & Cameron Lee Compatibility: 98.0%, Recommendation: Perfect Match
-Christina Park & Leonel Rangel Jimenez Compatibility: 64.0%, Recommendation: Likely Match
-Zoe Hatsios & Justin  Liang  Compatibility: 34.0%, Recommendation: Re-match Recommended
-Emily Kang & Jennifer O’Neill Compatibility: 16.0%, Recommendation: Re-match Needed
-Siona Kshirsagar & John Kirollos Compatibility: 50.0%, Recommendation: Likely Match
-Andrew Rust & Christina Alperi Compatibility: 99.0%, Recommendation: Perfect Match
-Luke Duan & Sarah Jarrell Compatibility: 99.0%, Recommendation: Perfect Match
-Michelle Bao & Janie Wang Compatibility: 98.0%, Recommendation: Perfect Match
-Belinda Hu & annie chen Compatibility: 65.0%, Recommendation: Likely Match
-Sarah McLaurin & William  Elder Compatibility: 52.0%, Recommendation: Likely Match
-Claire Hendrix & Nathan Harrison Compatibility: 80.0%, Recommendation: Very Likely Match
-Ellie Kinsey & Ehab Alhosaini Compatibility: 98.0%, Recommendation: Perfect Match
-Lauren  Sidelinger  & Rajeev Dutta Compatibility: 81.0%, Recommendation: Very Likely Match
-James Larkins & Davis  Upchurch Compatibility: 53.0%, Recommendation: Likely Match
-John Stephens & Siyun Lee Compatibility: 65.0%, Recommendation: Likely Match
-Taylor  Flach  & Charlie Pitts Compatibility: 13.0%, Recommendation: Re-match Needed
-Emma Holmes & Minh-Thu Dinh Compatibility: 65.0%, Recommendation: Likely Match
-Emma Eldridge & Rachel  Lopez Compatibility: 51.0%, Recommendation: Likely Match
-Julia Wang & Grace Channell Compatibility: 40.0%, Recommendation: Re-match Recommended
-Anna Geib & Lainey Drake Compatibility: 99.0%, Recommendation: Perfect Match
-Faith Rardin & Nicole Fotuchang  Compatibility: 80.0%, Recommendation: Very Likely Match
-Hannah Wilson & Evan Izzo Compatibility: 64.0%, Recommendation: Likely Match
-Sarah Baldwin & Kathy Nguyen Compatibility: 14.0%, Recommendation: Re-match Needed
-Valerie Swart & Leigha McLeab Compatibility: 20.0%, Recommendation: Re-match Needed
-Ghulam Saeeda & Kathleen Hablutzel Compatibility: 40.0%, Recommendation: Re-match Recommended
-Trevor Pharr & Jessee Steele Compatibility: 23.0%, Recommendation: Re-match Needed
-Eiley Hartzell-Jordan & Selena Tieu Compatibility: 27.0%, Recommendation: Re-match Needed
-Rachel Niemira & Marco Allen Compatibility: 22.0%, Recommendation: Re-match Needed
-Gia Lash & Alex  Dastin Compatibility: 99.0%, Recommendation: Perfect Match
-Rovic Villamor & Rachel  Morrow Compatibility: 99.0%, Recommendation: Perfect Match
-Matthew Kathman & Kathryn Turk Compatibility: 41.0%, Recommendation: Re-match Recommended
-Cindy Wang & Henry Chen Compatibility: 79.0%, Recommendation: Likely Match
-Tyler Cochrane & Hahn Lheem Compatibility: 64.0%, Recommendation: Likely Match
-Alyanna Wilson & Helen Tran Compatibility: 80.0%, Recommendation: Very Likely Match
+Sincere Hargrove & Akash Karri Compatibility: 21.0%, Recommendation: Re-match Needed
+Lydia Nusbaum & Jackson Evans Compatibility: 66.0%, Recommendation: Likely Match
+Elias Arroyo & Thomas Cope Compatibility: 41.0%, Recommendation: Re-match Recommended
+Adam Cogdell & Danny Chau Compatibility: 99.0%, Recommendation: Perfect Match
+Isabella Li & Brooke Oberbeck Compatibility: 99.0%, Recommendation: Perfect Match
+Mona  Su & Evan Izzo Compatibility: 99.0%, Recommendation: Perfect Match
+Emily Holmes & Weston Murdock Compatibility: 26.0%, Recommendation: Re-match Needed
+Ellie Kinsey & Christopher  Shella Compatibility: 99.0%, Recommendation: Perfect Match
+Zoe Hatsios & Shannon Hunter Compatibility: 26.0%, Recommendation: Re-match Needed
+McKenzy Heavlin & Jason Yang Compatibility: 81.0%, Recommendation: Very Likely Match
+Valerie Swart & Mary Hochberg Compatibility: 99.0%, Recommendation: Perfect Match
+Ellen Yu & Alyanna Wilson Compatibility: 60.0%, Recommendation: Likely Match
+Gaven Bell & Caleb Keaveney Compatibility: 41.0%, Recommendation: Re-match Recommended
+Marco Allen & Jordan  Pilcher Compatibility: 52.0%, Recommendation: Likely Match
+Andrew Bounds & annie chen Compatibility: 42.0%, Recommendation: Re-match Recommended
+Hanna Tawasha & Jesus Cisneros Estrada  Compatibility: 66.0%, Recommendation: Likely Match
+Onamiyeoluwa Ojo & Arushi Biswas Compatibility: 79.0%, Recommendation: Likely Match
+Aaron Lee & Jack Fan Compatibility: 41.0%, Recommendation: Re-match Recommended
+Nicole Fotuchang  & Lainey Drake Compatibility: 64.0%, Recommendation: Likely Match
+Christina  Liu & Keshav Javvadi Compatibility: 98.0%, Recommendation: Perfect Match
+Trevor Pharr & Anthony Caropolo Compatibility: 11.0%, Recommendation: Re-match Needed
+Aunindya Jyoti & Janie Wang Compatibility: 99.0%, Recommendation: Perfect Match
+Cecilia Poston & Bryant Hou Compatibility: 99.0%, Recommendation: Perfect Match
+Emily  Spero & Jakob  Heiser Compatibility: 64.0%, Recommendation: Likely Match
+Faith Rardin & Taylor Knapp Compatibility: 60.0%, Recommendation: Likely Match
+Jordan  Watts & Maya Anderson-Badillo Compatibility: 40.0%, Recommendation: Re-match Recommended
+Kathy Nguyen & Sarah Baldwin Compatibility: 17.0%, Recommendation: Re-match Needed
+Jenny  Suk & Elikem Dodor Compatibility: 17.0%, Recommendation: Re-match Needed
+Shaw Smith & Cameron  Taylor  Compatibility: 98.0%, Recommendation: Perfect Match
+Emily Wen & Hayley Melenas Compatibility: 65.0%, Recommendation: Likely Match
+Lauren Lim & Max Brinker Compatibility: 52.0%, Recommendation: Likely Match
+Alison Cody & Vibhu  Ambil  Compatibility: 80.0%, Recommendation: Very Likely Match
+Chelsea Middleton & Hannah Cruz Compatibility: 6.0%, Recommendation: Re-match Needed
+Darren Janz & Gideon Rain Tree Compatibility: 3.0%, Recommendation: Re-match Needed
+James Larkins & Ashton McCool Compatibility: 51.0%, Recommendation: Likely Match
+Mitchell Odhiambo & Minh-Thu Dinh Compatibility: 53.0%, Recommendation: Likely Match
+Jessica Chen & Morgan  Ray Compatibility: 50.0%, Recommendation: Likely Match
+Emily Duckworth & Anire  Egbe Compatibility: 27.0%, Recommendation: Re-match Needed
+Grace Channell & Julia Wang Compatibility: 21.0%, Recommendation: Re-match Needed
+Brook Lyn Mercado & Grace  Steffen Compatibility: 33.0%, Recommendation: Re-match Recommended
+Rajeev Dutta & Rhea Desai Compatibility: 98.0%, Recommendation: Perfect Match
+Sahil Patel & Kirti Patel Compatibility: 51.0%, Recommendation: Likely Match
+Emma Wright & Kasey Drake Compatibility: 18.0%, Recommendation: Re-match Needed
+Tyler Cochrane & Audrey  Dockendorf Compatibility: 98.0%, Recommendation: Perfect Match
+Jason Lee & Hyun Jun Bae Compatibility: 81.0%, Recommendation: Very Likely Match
+Ayden Yankow & Chloe Eaton Compatibility: 33.0%, Recommendation: Re-match Recommended
+Belinda Hu & Keshav Shah Compatibility: 99.0%, Recommendation: Perfect Match
+Rachel Patterson & Cordelia Gilligan Compatibility: 27.0%, Recommendation: Re-match Needed
 Scout Hayashi & Tyler Edwards Compatibility: 52.0%, Recommendation: Likely Match
-David Mora & Jason Yang Compatibility: 80.0%, Recommendation: Very Likely Match
-Jaeny Yoo & Jack Healy Compatibility: 99.0%, Recommendation: Perfect Match
-Cameron  Taylor  & Shaw Smith Compatibility: 40.0%, Recommendation: Re-match Recommended
-Cassandra Phoenix & Audrey  Dockendorf Compatibility: 80.0%, Recommendation: Very Likely Match
-Joseph Brentjens & Joey Kim Compatibility: 98.0%, Recommendation: Perfect Match
-Jordan  Watts & Maya Anderson-Badillo Compatibility: 42.0%, Recommendation: Re-match Recommended
-Mansi Sakarvadia & Thomas Cope Compatibility: 51.0%, Recommendation: Likely Match
-Gaven Bell & Catherine Lawrence Compatibility: 22.0%, Recommendation: Re-match Needed
-Onamiyeoluwa Ojo & Sarah  Tian Compatibility: 40.0%, Recommendation: Re-match Recommended
-Sindhu Polavaram & Bryant Hou Compatibility: 99.0%, Recommendation: Perfect Match
-Brinda Raghavendra & Angela Guan Compatibility: 27.0%, Recommendation: Re-match Needed
-George Zhuang & Emily Mawyer Compatibility: 64.0%, Recommendation: Likely Match
-Hunter Wood & Cecilia Bockoven Compatibility: 80.0%, Recommendation: Very Likely Match
-Tyler Youngberg & Michelle Dai Compatibility: 80.0%, Recommendation: Very Likely Match
-Gandhar Mahadeshwar & Brandon Kaminski Compatibility: 52.0%, Recommendation: Likely Match
-Tanay Singhal & Jackson Evans Compatibility: 51.0%, Recommendation: Likely Match
-Ayden Yankow & Jordan  Pilcher Compatibility: 99.0%, Recommendation: Perfect Match
-Sam Shepard & Francesca Balestrieri Compatibility: 64.0%, Recommendation: Likely Match
-Vibhu  Ambil  & Joe McCarty Compatibility: 61.0%, Recommendation: Likely Match
-Alexander  Bryan & Rushil  Patel Compatibility: 81.0%, Recommendation: Very Likely Match
-Sofia Sanchez & Morgan  Ray Compatibility: 42.0%, Recommendation: Re-match Recommended
-Darren Janz & Will Hitchcock Compatibility: 11.0%, Recommendation: Re-match Needed
-Greta Hesmer & James Griesen Compatibility: 98.0%, Recommendation: Perfect Match
-Romi Asad & Rhea Desai Compatibility: 98.0%, Recommendation: Perfect Match
-Stephen Schmidt & anna kuzma Compatibility: 27.0%, Recommendation: Re-match Needed
-Chloe Eaton & Amzie Yurko Compatibility: 99.0%, Recommendation: Perfect Match
-Danny Chau & Adam Cogdell Compatibility: 98.0%, Recommendation: Perfect Match
-Anthony Cheek & Ellen Yu Compatibility: 51.0%, Recommendation: Likely Match
-Shannon Hunter & Jack Fan Compatibility: 99.0%, Recommendation: Perfect Match
-Joseph Harris & Christina Tan Compatibility: 33.0%, Recommendation: Re-match Recommended
-Powell Braddock & Evin Flinchum Compatibility: 5.0%, Recommendation: Re-match Needed
-Josh  Magill  & Alison Cody Compatibility: 4.0%, Recommendation: Re-match Needed
-Kasey Drake & Brook Lyn Mercado Compatibility: 10.0%, Recommendation: Re-match Needed
-Anjiya Valliani & Brian Lin Compatibility: 99.0%, Recommendation: Perfect Match
-Spenser Geideman & Weston Murdock Compatibility: 6.0%, Recommendation: Re-match Needed
-Mo Ryang & Hayley Melenas Compatibility: 81.0%, Recommendation: Very Likely Match
-Nathan Ostrowski & Jonathan Buck Compatibility: 98.0%, Recommendation: Perfect Match
-Hope Hickman & Jessica Chen Compatibility: 81.0%, Recommendation: Very Likely Match
+Emily Kang & Helen Tran Compatibility: 80.0%, Recommendation: Very Likely Match
+Jaeny Yoo & Jack Healy Compatibility: 98.0%, Recommendation: Perfect Match
+Stephen Schmidt & Emile Charles Compatibility: 27.0%, Recommendation: Re-match Needed
+Emma Holmes & Sumani Nunna Compatibility: 64.0%, Recommendation: Likely Match
+Meg Etowski & Claire Hendrix Compatibility: 41.0%, Recommendation: Re-match Recommended
+Spenser Geideman & Daniel Carter Compatibility: 23.0%, Recommendation: Re-match Needed
+Ehab Alhosaini & Carla Escobar Compatibility: 53.0%, Recommendation: Likely Match
+Jonah Dixon & Emily Mawyer Compatibility: 98.0%, Recommendation: Perfect Match
+Mayce Mattox & Cecilia Yu Compatibility: 13.0%, Recommendation: Re-match Needed
+Alex Zhuang & Luke Duan Compatibility: 40.0%, Recommendation: Re-match Recommended
+Eden Segbefia & James Griesen Compatibility: 12.0%, Recommendation: Re-match Needed
+Oskar Wolff & Sarah  Tian Compatibility: 44.0%, Recommendation: Re-match Recommended
+Mallorie  Dufour & Catherine Lawrence Compatibility: 28.0%, Recommendation: Re-match Needed
+Leonel Rangel Jimenez & Jonathan Buck Compatibility: 42.0%, Recommendation: Re-match Recommended
+Emmaline Daggett & Diana  Sanchez  Compatibility: 80.0%, Recommendation: Very Likely Match
+Alexa De La Torre & Javier Villalpando Compatibility: 52.0%, Recommendation: Likely Match
+Luke Simmers & Kerstan Nealy Compatibility: 33.0%, Recommendation: Re-match Recommended
+Alexander Xiong & Araceli Arteaga Compatibility: 40.0%, Recommendation: Re-match Recommended
+James Fitz-Henley & Sarah Jarrell Compatibility: 50.0%, Recommendation: Likely Match
+Mo Ryang & Worth Powell Compatibility: 52.0%, Recommendation: Likely Match
+Sophia  Israel  & Chloe  Hawes Compatibility: 50.0%, Recommendation: Likely Match
+Anthony Cheek & Sarah Campbell Compatibility: 30.0%, Recommendation: Re-match Recommended
+Tanay Singhal & John Morrison Compatibility: 53.0%, Recommendation: Likely Match
+Joe Benson & Rakeem  Yakubu Compatibility: 98.0%, Recommendation: Perfect Match
+David Tang & Joseph Harris Compatibility: 18.0%, Recommendation: Re-match Needed
+Michelle Dai & Romi Asad Compatibility: 41.0%, Recommendation: Re-match Recommended
+Josh Abrams & Faith Baxley Compatibility: 33.0%, Recommendation: Re-match Recommended
+Willa Holt & Pierre-Nicolas  Perrin Compatibility: 99.0%, Recommendation: Perfect Match
+Charlie Pitts & Joseph Brentjens Compatibility: 17.0%, Recommendation: Re-match Needed
+Gehao Pang & Sindhu Polavaram Compatibility: 64.0%, Recommendation: Likely Match
+Christian Martens & William  Elder Compatibility: 18.0%, Recommendation: Re-match Needed
+David Mora & Zack Lee Compatibility: 79.0%, Recommendation: Likely Match
+Kayleena Otero & Cameron Lee Compatibility: 64.0%, Recommendation: Likely Match
+Molly Klenzak & Nathan Harrison Compatibility: 37.0%, Recommendation: Re-match Recommended
+Madeline Paoletti Paoletti & Rovic Villamor Compatibility: 99.0%, Recommendation: Perfect Match
+Brian Lin & Anjiya Valliani Compatibility: 98.0%, Recommendation: Perfect Match
+Finn Densmore & Joe McCarty Compatibility: 80.0%, Recommendation: Very Likely Match
+Mansi Sakarvadia & Emma Eldridge Compatibility: 80.0%, Recommendation: Very Likely Match
+Anya Tucker & Billy Ngo Compatibility: 24.0%, Recommendation: Re-match Needed
+Isaac Poarch & Rachel  Morrow Compatibility: 41.0%, Recommendation: Re-match Recommended
+Hannah Stertzbach & Deron Bakker Compatibility: 81.0%, Recommendation: Very Likely Match
+Tyler Youngberg & Kate  Nichols Compatibility: 64.0%, Recommendation: Likely Match
+Angelina Katsanis & Nina Prabhu’ Compatibility: 51.0%, Recommendation: Likely Match
+John Stephens & Joey Kim Compatibility: 99.0%, Recommendation: Perfect Match
+Will Hitchcock & Rachel Niemira Compatibility: 13.0%, Recommendation: Re-match Needed
+Helen Li & John Kirollos Compatibility: 82.0%, Recommendation: Very Likely Match
+Chloe Pickell & Justin  Liang  Compatibility: 26.0%, Recommendation: Re-match Needed
+Jess Witcher & Vanessa Almelor Compatibility: 41.0%, Recommendation: Re-match Recommended
+Sierra Miles & Brinda Raghavendra Compatibility: 64.0%, Recommendation: Likely Match
+Matthew Kathman & Ghulam Saeeda Compatibility: 61.0%, Recommendation: Likely Match
+Sofia Sanchez & Felice Policastro Compatibility: 51.0%, Recommendation: Likely Match
+Taylor  Flach  & Gia Lash Compatibility: 31.0%, Recommendation: Re-match Recommended
+Angela Guan & Michelle Bao Compatibility: 79.0%, Recommendation: Likely Match
+Timothy Navarro & Maanasi Bulusu Compatibility: 98.0%, Recommendation: Perfect Match
+Elizabeth Redding & Laura Sink Compatibility: 80.0%, Recommendation: Very Likely Match
+Josh  Magill  & Gage Grabert Compatibility: 11.0%, Recommendation: Re-match Needed
+Alexander  Bryan & Rushil  Patel Compatibility: 80.0%, Recommendation: Very Likely Match
+Hailey Porter & Jennifer O’Neill Compatibility: 10.0%, Recommendation: Re-match Needed
+Hunter Wood & Ryan Catoe Compatibility: 80.0%, Recommendation: Very Likely Match
+Vanessa Lin & Victoria Simmons Compatibility: 41.0%, Recommendation: Re-match Recommended
+Abigail  Phillips & Enzo Niebuhr Compatibility: 65.0%, Recommendation: Likely Match
+Shaw Smith & Chase Overpeck Compatibility: 14.0%, Recommendation: Re-match Needed
+Alex Cini & EJ Collins Compatibility: 20.0%, Recommendation: Re-match Needed
+Amzie Yurko & Francesca Balestrieri Compatibility: 64.0%, Recommendation: Likely Match
+Hannah Wilson & Christina Park Compatibility: 67.0%, Recommendation: Likely Match
+Greta Hesmer & Hahn Lheem Compatibility: 99.0%, Recommendation: Perfect Match
+Grace Bassett & anna kuzma Compatibility: 33.0%, Recommendation: Re-match Recommended
+Jennifer Wolfe & Kinley  Rojzman Compatibility: 32.0%, Recommendation: Re-match Recommended
+Jessee Steele & Vaishnavi  Siripurapu  Compatibility: 27.0%, Recommendation: Re-match Needed
+Abby  McNaughton & Rebekah Glover Compatibility: 34.0%, Recommendation: Re-match Recommended
+Erich Hess & Megan  Hastings Compatibility: 40.0%, Recommendation: Re-match Recommended
+Ishani Deliwala & Powell Braddock Compatibility: 40.0%, Recommendation: Re-match Recommended
+Brandon Kaminski & Gandhar Mahadeshwar Compatibility: 80.0%, Recommendation: Very Likely Match
+Emerson Wells  & Hannah Matthews  Compatibility: 97.0%, Recommendation: Perfect Match
+Cecilia Bockoven & Jalen  Watley Compatibility: 22.0%, Recommendation: Re-match Needed
+Sarah  McClellan  & Siyun Lee Compatibility: 99.0%, Recommendation: Perfect Match
+Bradley Samples & Nathan Unah Compatibility: 98.0%, Recommendation: Perfect Match
+Christina Alperi & Andrew Rust Compatibility: 99.0%, Recommendation: Perfect Match
+Hope Hickman & Lauren  Sidelinger  Compatibility: 64.0%, Recommendation: Likely Match
+Cassandra Phoenix & Georgeanna Randall Compatibility: 61.0%, Recommendation: Likely Match
+Ashley Talton & Alex  Dastin Compatibility: 10.0%, Recommendation: Re-match Needed
+Aidan  Keaveney & Adithi Rao Compatibility: 79.0%, Recommendation: Likely Match
+Selena Tieu & Eiley Hartzell-Jordan Compatibility: 20.0%, Recommendation: Re-match Needed
+Christina Tan & Jessica Wu Compatibility: 33.0%, Recommendation: Re-match Recommended
+Davis  Upchurch & Tyler Dennis Compatibility: 18.0%, Recommendation: Re-match Needed
+Evin Flinchum & Hope Hosford Compatibility: 26.0%, Recommendation: Re-match Needed
+Isabel Huesa & Emma Zhang Compatibility: 53.0%, Recommendation: Likely Match
 Seth Thomas & Sydney Kuczenski Compatibility: 33.0%, Recommendation: Re-match Recommended
-Jalen  Watley & Mahew Lin Compatibility: 33.0%, Recommendation: Re-match Recommended
-Ashton McCool & Tyler Dennis Compatibility: 22.0%, Recommendation: Re-match Needed
-Cecilia Yu & Hope Hosford Compatibility: 41.0%, Recommendation: Re-match Recommended
-Billy Ngo & Anya Tucker Compatibility: 26.0%, Recommendation: Re-match Needed
-Chelsea Middleton & Chloe  Hawes Compatibility: 11.0%, Recommendation: Re-match Needed
-Sumani Nunna & Kirti Patel Compatibility: 61.0%, Recommendation: Likely Match
-Hailey Porter & Sophia  Israel  Compatibility: 9.0%, Recommendation: Re-match Needed
-Enzo Niebuhr & Finn Densmore Compatibility: 18.0%, Recommendation: Re-match Needed
-Rachel Patterson & Oskar Wolff Compatibility: 16.0%, Recommendation: Re-match Needed
-Nathan Unah & Lauren Lim Compatibility: 42.0%, Recommendation: Re-match Recommended
-Grace  Steffen & Araceli Arteaga Compatibility: 23.0%, Recommendation: Re-match Needed
-Abby Culberson & Mallorie  Dufour Compatibility: 99.0%, Recommendation: Perfect Match
-Emerson Wells  & Hannah Matthews  Compatibility: 99.0%, Recommendation: Perfect Match
-Alexander Xiong & Vanessa Lin Compatibility: 15.0%, Recommendation: Re-match Needed
-Michael """The Rock"" Zhang" & Elias Arroyo Compatibility: 98.0%, Recommendation: Perfect Match
-Laura Sink & Elizabeth Redding Compatibility: 79.0%, Recommendation: Likely Match
-Vanessa Almelor & Javier Villalpando Compatibility: 43.0%, Recommendation: Re-match Recommended
-Christopher  Shella & Carla Escobar Compatibility: 33.0%, Recommendation: Re-match Recommended
-Brooke Oberbeck & Isaac Poarch Compatibility: 43.0%, Recommendation: Re-match Recommended
-Jess Witcher & Andy Liu Compatibility: 16.0%, Recommendation: Re-match Needed
-Emile Charles & Grace Bassett Compatibility: 51.0%, Recommendation: Likely Match
-Kayleena Otero & McKenzy Heavlin Compatibility: 42.0%, Recommendation: Re-match Recommended
-Vaishnavi  Siripurapu  & Ishani Deliwala Compatibility: 98.0%, Recommendation: Perfect Match
-Victoria Simmons & Cordelia Gilligan Compatibility: 32.0%, Recommendation: Re-match Recommended
-James Fitz-Henley & Mitchell Odhiambo Compatibility: 26.0%, Recommendation: Re-match Needed
-Hyun Jun Bae & Jenny  Suk Compatibility: 28.0%, Recommendation: Re-match Needed
-Alexa De La Torre & Mico Guevarra Compatibility: 21.0%, Recommendation: Re-match Needed
-Kinley  Rojzman & Jennifer Wolfe Compatibility: 33.0%, Recommendation: Re-match Recommended
-Rakeem  Yakubu & John Morrison Compatibility: 51.0%, Recommendation: Likely Match
-Erich Hess & Adithi Rao Compatibility: 13.0%, Recommendation: Re-match Needed
-Akshay Sridharan & Isabel Huesa Compatibility: 18.0%, Recommendation: Re-match Needed
-Aunindya Jyoti & Kerstan Nealy Compatibility: 4.0%, Recommendation: Re-match Needed
+Kevin Wang & Leigha McLeab Compatibility: 42.0%, Recommendation: Re-match Recommended
+Ayden Hochstein & Michael """The Rock"" Zhang" Compatibility: 33.0%, Recommendation: Re-match Recommended
+Abby Culberson & Cindy Wang Compatibility: 8.0%, Recommendation: Re-match Needed
+Siona Kshirsagar & Kathryn Turk Compatibility: 40.0%, Recommendation: Re-match Recommended
+Sam Shepard & Akshay Sridharan Compatibility: 33.0%, Recommendation: Re-match Recommended
+Debo Park & Anna Geib Compatibility: 52.0%, Recommendation: Likely Match
+Nikhil Pendurkar & Henry Chen Compatibility: 99.0%, Recommendation: Perfect Match
+Nathan Ostrowski & George Zhuang Compatibility: 44.0%, Recommendation: Re-match Recommended
+Gracie  Joo (you're welcome Tim) & Mico Guevarra Compatibility: 4.0%, Recommendation: Re-match Needed
+Haley Heath & Emanuel Ordonez Compatibility: 32.0%, Recommendation: Re-match Recommended
+Rachel  Lopez & Daniel LaFata Compatibility: 14.0%, Recommendation: Re-match Needed
+Sarah McLaurin & Mahew Lin Compatibility: 19.0%, Recommendation: Re-match Needed
+Gayeon  Nam & Grayson Herrera Compatibility: 3.0%, Recommendation: Re-match Needed
+Andy Liu & Kathleen Hablutzel Compatibility: 2.0%, Recommendation: Re-match Needed

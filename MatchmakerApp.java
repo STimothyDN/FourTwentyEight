@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.*;
 import javafx.application.Application;
+import javafx.scene.chart.XYChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.BarChart;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
@@ -43,6 +47,7 @@ public class MatchmakerApp extends Application
 	public static File fileToReadCheck = new File(fileToRead);
 	public static String fileToReadNow = "Matchmaking/matchmaking.csv";
 	public static String fxmlFile = "MatchmakerApp.fxml";
+	public static String fxmlDataFile = "DataMenu.fxml";
 	public static boolean isWordView = false;
     public static boolean dataDownloaded = false;
     public static boolean isSingleRun = false;
@@ -51,6 +56,8 @@ public class MatchmakerApp extends Application
     public static String testProgramString = "Matchmaking/MatchmakerApp.jar";
     public static String ogProgramString = "MatchmakerApp.jar";
     public static File deleteFile = new File(testProgramString);
+    public static ObservableList<Integer> compatList = FXCollections.observableArrayList(0, 0, 0, 0, 0);
+    public static boolean isRunning = false;
 
 	public MatchmakerApp()
 	{
@@ -86,22 +93,27 @@ public class MatchmakerApp extends Application
 		if(compatibility >= 97.00)
 		{
 			recommendation = "Perfect Match";
+			compatList.set(0, compatList.get(0)+1);
 		}
 		else if(compatibility < 97.00 && compatibility >= 80.00)
 		{
 			recommendation = "Very Likely Match";
+			compatList.set(1, compatList.get(1)+1);
 		}
 		else if(compatibility < 80.00 && compatibility >= 50.00)
 		{
 			recommendation = "Likely Match";
+			compatList.set(2, compatList.get(2)+1);
 		}
 		else if(compatibility < 50.00 && compatibility >= 30.00)
 		{
 			recommendation = "Re-match Recommended";
+			compatList.set(3, compatList.get(3)+1);
 		}
 		else if(compatibility < 30.00 && compatibility >= 0.00)
 		{
 			recommendation = "Re-match Needed";
+			compatList.set(4, compatList.get(4)+1);
 		}
 		else
 		{
@@ -153,36 +165,7 @@ public class MatchmakerApp extends Application
 
 		catch(FileNotFoundException e)
 		{
-			Alert alert = new Alert(AlertType.ERROR);
-
-			alert.setTitle("Exception Dialog");
-			alert.setHeaderText("Oh no!");
-			alert.setContentText("Could not find data set! If this is your first time running the program, have you clicked the Download Data Set button?");
-
-			Exception ex = new FileNotFoundException("Could not find file matchmaker.txt");
-			StringWriter sw = new StringWriter();
-			PrintWriter pw = new PrintWriter(sw);
-
-			ex.printStackTrace(pw);
-
-			String exceptionText = sw.toString();
-			Label label = new Label("The exception stacktrace was:");
-			TextArea textArea = new TextArea(exceptionText);
-
-			textArea.setEditable(false);
-			textArea.setWrapText(true);
-			textArea.setMaxWidth(Double.MAX_VALUE);
-			textArea.setMaxHeight(Double.MAX_VALUE);
-			GridPane.setVgrow(textArea, Priority.ALWAYS);
-			GridPane.setHgrow(textArea, Priority.ALWAYS);
-
-			GridPane expContent = new GridPane();
-
-			expContent.setMaxWidth(Double.MAX_VALUE);
-			expContent.add(label, 0, 0);
-			expContent.add(textArea, 0, 1);
-			alert.getDialogPane().setExpandableContent(expContent);
-			alert.showAndWait();
+			noFileFound();
 		}
 
 		catch(IOException e)
@@ -444,6 +427,40 @@ public class MatchmakerApp extends Application
         mp.play();
     }
 
+    public static void noFileFound()
+    {
+    	Alert alert = new Alert(AlertType.ERROR);
+
+		alert.setTitle("Exception Dialog");
+		alert.setHeaderText("Oh no!");
+		alert.setContentText("Could not find data set! If this is your first time running the program, have you clicked the Download Data Set button?");
+
+		Exception ex = new FileNotFoundException("Could not find file matchmaker.csv");
+		StringWriter sw = new StringWriter();
+		PrintWriter pw = new PrintWriter(sw);
+
+		ex.printStackTrace(pw);
+
+		String exceptionText = sw.toString();
+		Label label = new Label("The exception stacktrace was:");
+		TextArea textArea = new TextArea(exceptionText);
+
+		textArea.setEditable(false);
+		textArea.setWrapText(true);
+		textArea.setMaxWidth(Double.MAX_VALUE);
+		textArea.setMaxHeight(Double.MAX_VALUE);
+		GridPane.setVgrow(textArea, Priority.ALWAYS);
+		GridPane.setHgrow(textArea, Priority.ALWAYS);
+
+		GridPane expContent = new GridPane();
+
+		expContent.setMaxWidth(Double.MAX_VALUE);
+		expContent.add(label, 0, 0);
+		expContent.add(textArea, 0, 1);
+		alert.getDialogPane().setExpandableContent(expContent);
+		alert.showAndWait();
+    }
+
     public static void downloadFile(String fromFile, String toFile)
     {
         try
@@ -511,6 +528,34 @@ public class MatchmakerApp extends Application
             alert.showAndWait();
             deleteFile.delete();
         }
+    }
+
+    public static void barGraphViewer(String xLabel, int numOne, int numTwo, int numThree,
+    	int numFour, int numFive)
+    {
+    	Stage secondary = new Stage();
+    	BorderPane rootTwo = new BorderPane();
+    	CategoryAxis xAxis = new CategoryAxis();
+		NumberAxis yAxis = new NumberAxis();
+		BarChart barChart = new BarChart(xAxis, yAxis);
+		XYChart.Series dataSeries1 = new XYChart.Series();
+		xAxis.setLabel(xLabel);
+		yAxis.setLabel("Number of People");
+		dataSeries1.setName("Number of Respondants");
+		barChart.setPrefSize(875, 565);
+
+		dataSeries1.getData().add(new XYChart.Data("1", numOne));
+		dataSeries1.getData().add(new XYChart.Data("2", numTwo));
+		dataSeries1.getData().add(new XYChart.Data("3", numThree));
+		dataSeries1.getData().add(new XYChart.Data("4", numFour));
+		dataSeries1.getData().add(new XYChart.Data("5", numFive));
+		barChart.getData().add(dataSeries1);
+		barChart.setBarGap(10);
+
+		rootTwo.setCenter(barChart);
+    	secondary.setTitle(xLabel);
+        secondary.setScene(new Scene(rootTwo));
+        secondary.show();
     }
 
     public static void fileViewer(String fileRead, String textHeader, boolean isWordView)
@@ -820,5 +865,99 @@ class PeopleProbPrior
 	public double totalProb()
 	{
 		return calcQ1Prob() * calcQ2Prob() * calcQ3Prob() * calcQ4Prob() * calcQ5Prob();
+	}
+}
+
+class ChartData
+{
+	private String qName;
+	private int numOne;
+	private int numTwo;
+	private int numThree;
+	private int numFour;
+	private int numFive;
+	private String identifier;
+	private List<Integer> dataPointList = new ArrayList<Integer>();
+
+	public ChartData(String qName, int numOne, int numTwo, int numThree, int numFour, int numFive, String identifier)
+	{
+		this.qName = qName;
+		this.numOne = numOne;
+		this.numTwo = numTwo;
+		this.numThree = numThree;
+		this.numFour = numFour;
+		this.numFive = numFive;
+		this.identifier = identifier;
+	}
+
+	public void addPoint(int dataPoint)
+	{	
+		dataPointList.add(dataPoint);
+		if(dataPoint == 1)
+		{
+			numOne++;
+		}
+		else if(dataPoint == 2)
+		{
+			numTwo++;
+		}
+		else if(dataPoint == 3)
+		{
+			numThree++;
+		}
+		else if(dataPoint == 4)
+		{
+			numFour++;
+		}
+		else if(dataPoint == 5)
+		{
+			numFive++;
+		}
+	}
+
+	public String getQName()
+	{
+		return qName;
+	}
+
+	public List<Integer> getDataPointList()
+	{
+		return dataPointList;
+	}
+
+	public int getNumOne()
+	{
+		return numOne;
+	}
+
+	public int getNumTwo()
+	{
+		return numTwo;
+	}
+
+	public int getNumThree()
+	{
+		return numThree;
+	}
+
+	public int getNumFour()
+	{
+		return numFour;
+	}
+
+	public int getNumFive()
+	{
+		return numFive;
+	}
+
+	public String getIdentifier()
+	{
+		return identifier;
+	}
+
+	@Override
+	public String toString()
+	{
+		return qName + " " + Integer.toString(numOne) + " " + Integer.toString(numTwo) + " " + Integer.toString(numThree) + " " + Integer.toString(numFour) + " " +Integer.toString(numFive);
 	}
 }

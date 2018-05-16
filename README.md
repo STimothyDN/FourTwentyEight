@@ -1,13 +1,13 @@
 # FourTwentyEight
 ### By Siyun Lee and Timothy Navarro
 
-* Version: 6.1
-* Last Updated: 05/12/2018
+* Version: 7.0
+* Last Updated: 05/16/2018
 * Source Code: https://github.com/STimothyDN/FourTwentyEight
 
 # Introduction
 
-Our platonic matchmaking program utilizes a variant of the Metropolis-Hastings Algorithm that we modified  in order to create pairs. Data is fed in through a .csv file obtained through Google Forms, of which a new version can be obtained by simply clicking the download button from the program. Our program also features an in-program text and spreadsheet viewer to view generated pairs, as well as exception handling to avoid user error. A built-in web browser also allows users to fill out the matchmaking form if they haven’t already done so.
+Our platonic matchmaking program utilizes a variant of the Metropolis-Hastings Algorithm that we modified  in order to create pairs. Data is fed in through a .csv file obtained through Google Forms, of which a new version can be obtained by simply clicking the download button from the program. Our program also features an in-program text and spreadsheet viewer to view generated pairs, as well as exception handling to avoid user error. A built-in web browser also allows users to fill out the matchmaking form if they haven’t already done so. The program automatically compiles info into easily readable bar graphs for users curious about the distribution of answers for the 5 matchmaking questions.
 
 # Features
 ## STATE OF THE ART MATCHMAKING ALGORITHM
@@ -35,6 +35,9 @@ Our platonic matchmaking program utilizes a variant of the Metropolis-Hastings A
 
 ## BUILT-IN EXCEPTION HANDLING
 * Our program is dumb proof! Ran the algorithm after forgetting to load the data file? Trying to use the spreadsheet or text viewer when no pairs have been generated? Don’t fear! Our program won’t let you crash it, no matter how hard you try.
+
+## CHARTS GALORE
+* Our program offers statistics junkies and regular users alike a set of easily viewable bar graphs that show the distribution of answers, and these graphs update automatically when new data gets fed into the program.
 
 # How our Algorithm Works
 

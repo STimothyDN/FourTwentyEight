@@ -1,8 +1,17 @@
 import java.io.*;
 import java.util.*;
+import javafx.util.Duration;
+import javafx.animation.Timeline;
+import javafx.animation.KeyFrame;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.chart.XYChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.BarChart;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -13,6 +22,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.ComboBox;
 import javafx.scene.text.Text;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import java.io.File;
 import javafx.collections.FXCollections;
@@ -35,6 +45,8 @@ public class MatchController implements Initializable
     Button formButton;
     @FXML
     Button openButton;
+    @FXML
+    Button openDataMenu;
 	@FXML
 	Button runButton;
     @FXML
@@ -47,7 +59,6 @@ public class MatchController implements Initializable
     private URL location;
     @FXML
     private ResourceBundle resources;
-
 
 	@Override
     public void initialize(URL location, ResourceBundle resources)
@@ -105,6 +116,7 @@ public class MatchController implements Initializable
         viewButton.setOnAction(this::handleView);
         singleGo.setOnAction(this::handleSingle);
         formButton.setOnAction(this::handleForm);
+        openDataMenu.setOnAction(this::handleDataMenu);
     }
 
     public MatchController()
@@ -227,6 +239,7 @@ public class MatchController implements Initializable
     {
         MatchmakerApp.matchChain = 5000;
         MatchmakerApp.peopleList = new ArrayList<People>();
+        MatchmakerApp.isRunning = true;
         int originalSize = MatchmakerApp.peopleList.size();
 
         if(MatchmakerApp.fileToWriteCheck.exists() && !MatchmakerApp.fileToWriteCheck.isDirectory())
@@ -258,6 +271,7 @@ public class MatchController implements Initializable
             MatchmakerApp.playAlert();
             MatchmakerApp.showAlert(AlertType.INFORMATION,"Confirmation", null, "The latest platonic pairs have been generated!" + "\n" + "Use the Open Previously Generated Pairings button to view!");
         }
+        MatchmakerApp.isRunning = false;
     }
 
     public void handleAbout(ActionEvent event)
@@ -285,5 +299,29 @@ public class MatchController implements Initializable
         browser.setTitle("Matchmaking Form");
         browser.setScene(new Scene(rootBrowse));
         browser.show();
+    }
+
+    public void handleDataMenu(ActionEvent event)
+    {
+        if(MatchmakerApp.fileToReadCheck.exists() && !MatchmakerApp.fileToReadCheck.isDirectory())
+        {
+            try
+            {
+                Stage dataMenu = new Stage();
+                Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(MatchmakerApp.fxmlDataFile));
+
+                dataMenu.setTitle("FourTwentyEight Data Viewer");
+                dataMenu.setScene(new Scene(root));
+                dataMenu.show();
+            }
+            catch(IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        else
+        {
+            MatchmakerApp.noFileFound();
+        }
     }
 }
